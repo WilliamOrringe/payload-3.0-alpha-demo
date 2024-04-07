@@ -6,7 +6,7 @@ const Page = () => {
   return (
     <article className={['container'].filter(Boolean).join(' ')}>
       <h1>
-        Payload 3.0 <span className="rainbow">ALPHA</span>!
+        Payload 3.0 <span className="rainbow text-4xl">ALPHA</span>!
       </h1>
       <p>
         This alpha is rapidly evolving, you can report any bugs against{' '}
