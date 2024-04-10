@@ -1,4 +1,5 @@
 import path from 'path'
+import { en } from 'payload/i18n/en'
 // import { postgresAdapter } from '@payloadcms/db-postgres'
 import {
   AlignFeature,
@@ -36,16 +37,14 @@ export default buildConfig({
   typescript: {
     outputFile: path.resolve(dirname, 'payload-types.ts'),
   },
-  // db: postgresAdapter({
-  //   pool: {
-  //     connectionString: process.env.POSTGRES_URI || ''
-  //   }
-  // }),
   db: postgresAdapter({
     pool: {
       connectionString: process.env.DATABASE_URI,
     },
   }),
+  // i18n: {
+  //   supportedLanguages: {en}
+  // },
   admin: {
     autoLogin: {
       email: 'dev@payloadcms.com',
