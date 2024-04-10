@@ -6,9 +6,9 @@ import Navbar from '@/components/Navbar'
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <html>
-      <body className="dark:bg-backgroundDark dark:text-textDark dark:accent-accentDark bg-backgroundLight text-textLight accent-accentLight">
+      <body className="dark:bg-[#050A11] dark:text-textDark dark:accent-accentDark bg-backgroundLight text-textLight accent-accentLight m-12">
         <Navbar />
-        <main className="p-10">{children}</main>
+        <main className="">{children}</main>
       </body>
     </html>
   )

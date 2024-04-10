@@ -4,7 +4,7 @@ import Sun from './icons/Sun'
 import Moon from './icons/Moon'
 
 const ThemeSwitcher = () => {
-  const [darkMode, setDarkMode] = useState(false)
+  const [darkMode, setDarkMode] = useState(true)
   useEffect(() => {
     const isDarkMode = localStorage.getItem('darkMode') === 'true'
     console.log(isDarkMode)
@@ -23,7 +23,7 @@ const ThemeSwitcher = () => {
   return (
     <>
       <div className="">
-        <div className="flex flex-col justify-center ml-3">
+        <div className="flex flex-col justify-center">
           <input type="checkbox" name="light-switch" className="hidden" />
           <label
             className="relative cursor-pointer p-2"

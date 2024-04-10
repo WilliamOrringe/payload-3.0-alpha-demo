@@ -3,7 +3,7 @@ import ThemeSwitcher from './ThemeSwitcher'
 const Navbar = () => {
   return (
     <>
-      <span className="flex flex-row justify-end gap-5 p-5 items-center">
+      <span className="flex flex-row justify-end gap-5 items-center font-good">
         <a href="/">Home</a>
         <a href="/login">About</a>
         <a href="/login">Contact us</a>
