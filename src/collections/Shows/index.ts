@@ -4,6 +4,7 @@ import { admins } from '../../access/admins'
 import { anyone } from '../../access/anyone'
 import adminsAndUser from './access/adminsAndUser'
 import { checkRole } from './checkRole'
+import { ShowViewBlock } from './blocks/showView'
 
 const Shows: CollectionConfig = {
   slug: 'shows',
@@ -35,6 +36,11 @@ const Shows: CollectionConfig = {
           name: 'nextupdate',
           label: 'Next Update',
           type: 'date',
+        },
+        {
+          name: 'showView',
+          type: 'blocks',
+          blocks: [ShowViewBlock],
         },
       ],
     },
